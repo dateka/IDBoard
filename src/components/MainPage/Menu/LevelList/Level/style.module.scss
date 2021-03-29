@@ -1,0 +1,90 @@
+@import "../../../../../global.module.scss";
+
+$sourceCodesMaxHeight: 120px;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  margin-right: 2px;
+
+  .level {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+
+    .title {
+      margin-left: 10px;
+    }
+  }
+
+  .sourceCodes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-height: $sourceCodesMaxHeight;
+    overflow-y: scroll;
+    padding-right: 2px;
+
+    > * {
+      width: 100%;
+      min-height: 30px;
+    }
+  }
+
+  .hide {
+    max-height: 0;
+    transition: max-height 0.25s ease-in-out;
+  }
+
+  .expand {
+    max-height: $sourceCodesMaxHeight;
+    transition: max-height 0.25s ease-in-out;
+  }
+
+  .expand::-webkit-scrollbar-thumb {
+    background-color: $lightSaumon;
+  }
+
+  .hide::-webkit-scrollbar-thumb {
+    background-color: $lightSaumon;
+  }
+
+  .showScroll::-webkit-scrollbar-thumb {
+    background-color: $deeperBurgundy;
+  }
+}
+
+/* width */
+.expand::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.expand::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0;
+  border-radius: $radius;
+}
+
+/* Handle */
+.expand::-webkit-scrollbar-thumb {
+  border-radius: $radius;
+}
+
+/* width */
+.hide::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.hide::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0;
+  border-radius: $radius;
+}
+
+/* Handle */
+.hide::-webkit-scrollbar-thumb {
+  border-radius: $radius;
+}

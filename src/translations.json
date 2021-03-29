@@ -1,0 +1,10 @@
+{
+  "CodeArea.NewFile": {
+    "fr": "Entrez votre code source",
+    "en": "Type some source code"
+  },
+  "RunButton.Tootip": {
+    "fr": "Démarrer le programme",
+    "en": "Run your program"
+  }
+}

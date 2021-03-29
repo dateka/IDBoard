@@ -1,0 +1,68 @@
+$font: "Montserrat", Helvetica, Arial, sans-serif;
+
+$lightSeaGreen: #23b2a4;
+$white: #ffffff;
+$pineGreen: #067a6f;
+$turquoise: #0ee3ce;
+$darkGreen: #143330;
+$veryDarkGreen: #08211e;
+$darkMagenta: darkmagenta;
+$darkRed: darkred;
+$veryLightGreen: #42ab9e;
+$verylightRed: rgb(235, 93, 93);
+$lightFlashGreen: #00ca06;
+$darkFlashGreen: #007d0f;
+$deeperBurgundy: #200808;
+$lightSaumon: #f2cccc;
+$darkerSaumon: #ebaeae;
+$brokenWhite: #4d3030;
+
+$radius: 3px;
+$widthScrollbar: 10px;
+$headerSize: 9%;
+$footerSize: 0%;
+$headerSizeMin: 70px;
+$iconsHeight: 40px;
+$searchBarHeight: 58px;
+
+$CalculatedHeight: calc(100% - (#{$headerSize} + #{$footerSize}));
+$CalculatedHeightSearchBarAndLevelListWrapper: calc(100% - #{$iconsHeight});
+$CalculatedHeightLevelList: calc(100% - #{$searchBarHeight});
+
+$sourceCodesMaxHeight: 120px;
+
+:export {
+  font: $font;
+
+  lightSeaGreen: $lightSeaGreen;
+  white: $white;
+  pineGreen: $pineGreen;
+  turquoise: $turquoise;
+  darkGreen: $darkGreen;
+  veryDarkGreen: $veryDarkGreen;
+  darkMagenta: $darkMagenta;
+  darkRed: $darkRed;
+  veryLightGreen: $veryLightGreen;
+  verylightRed: $verylightRed;
+  lightFlashGreen: $lightFlashGreen;
+  darkFlashGreen: $darkFlashGreen;
+  deeperBurgundy: $deeperBurgundy;
+  lightSaumon: $lightSaumon;
+  darkerSaumon: $darkerSaumon;
+  brokenWhite: $brokenWhite;
+
+  radius: $radius;
+  widthScrollbar: $widthScrollbar;
+  headerSize: $headerSize;
+  footerSize: $footerSize;
+  headerSizeMin: $headerSizeMin;
+
+  iconsHeight: $iconsHeight;
+  searchBarHeight: $searchBarHeight;
+
+  CalculatedHeight: $CalculatedHeight;
+  CalculatedHeightSearchBarAndLevelListWrapper: $CalculatedHeightSearchBarAndLevelListWrapper;
+  CalculatedHeightLevelList: $CalculatedHeightLevelList;
+
+  sourceCodesMaxHeight: $sourceCodesMaxHeight;
+}
